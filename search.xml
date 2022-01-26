@@ -31,4 +31,167 @@
     <url>/2022/01/25/hexo%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[]]></content>
   </entry>
+  <entry>
+    <title>计算机网络</title>
+    <url>/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+    <content><![CDATA[<p>B站计算机网络微课堂（湖科大教书匠）笔记</p>
+<span id="more"></span>
+
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="因特网概述"><a href="#因特网概述" class="headerlink" title="因特网概述"></a>因特网概述</h2><h3 id="网络、互联网和因特网"><a href="#网络、互联网和因特网" class="headerlink" title="网络、互联网和因特网"></a>网络、互联网和因特网</h3><p>网络（Network）由若干结点（Node）和连接这些结点的链路（Link）组成。</p>
+<p>多个网络还可以通过路由器互连起来，这样就构成了一个覆盖范围更大的网络，即互联网。因此，互联网是“网络的网络”</p>
+<p>因特网（Internet）是世界上最大的互连网络</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126194009677.png" alt="image-20220126194009677"></p>
+<h3 id="因特网发展的三个阶段"><a href="#因特网发展的三个阶段" class="headerlink" title="因特网发展的三个阶段"></a>因特网发展的三个阶段</h3><p>第一阶段（1969）：从单个网络ARPANET向互联网发展</p>
+<p>第二阶段（1985）：逐步建成三级结构的因特网</p>
+<p>第三阶段（1993）：逐步形成了多层次ISP结构的因特网</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126194259746.png" alt="image-20220126194259746"></p>
+<p>ISP（Internet Service Provider）：因特网服务提供者</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126194346168.png" alt="基于ISP的三层结构的因特网"></p>
+<h3 id="因特网的标准化工作"><a href="#因特网的标准化工作" class="headerlink" title="因特网的标准化工作"></a>因特网的标准化工作</h3><p>1.因特网在制定其标准上的一个很大的特点是<strong>面向公众</strong></p>
+<p>2.制订因特网的正式标准要经过以下四个阶段：</p>
+<ul>
+<li>因特网草案</li>
+<li>建议标准（从该阶段开始就成为RFC文档）</li>
+<li>草案标准</li>
+<li>因特网标准</li>
+</ul>
+<h3 id="因特网的组成"><a href="#因特网的组成" class="headerlink" title="因特网的组成"></a>因特网的组成</h3><p>因特网由<strong>边缘部分</strong>和<strong>核心部分</strong>组成</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126194633664.png" alt="image-20220126194633664"></p>
+<h2 id="三种交换方式"><a href="#三种交换方式" class="headerlink" title="三种交换方式"></a>三种交换方式</h2><h3 id="电路交换"><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h3><p>电路交换（Circuit Switching）</p>
+<p>电话交换机接通电话线的方式称为电路交换</p>
+<img src="  image-20220126194955445.png" alt="image-20220126194955445" style="zoom:67%;" />
+
+<p>从通信资源的分配角度来看，交换就是按照某种方式动态地分配传输线路的资源</p>
+<p>电路交换的三个步骤：</p>
+<ul>
+<li>建立连接（分配通信资源）</li>
+<li>通话（一直占用通信资源）</li>
+<li>释放连接（归还通信资源）</li>
+</ul>
+<h3 id="分组交换"><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h3><p>分组交换（Packet Switching）</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126195254363.png" alt="image-20220126195254363"></p>
+<h3 id="三种方式对比"><a href="#三种方式对比" class="headerlink" title="三种方式对比"></a>三种方式对比</h3><p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126195316721.png" alt="image-20220126195316721"><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126195327042.png" alt="image-20220126195327042"></p>
+<h2 id="计算机网络的定义和分类"><a href="#计算机网络的定义和分类" class="headerlink" title="计算机网络的定义和分类"></a>计算机网络的定义和分类</h2><p>1.计算机网络的精确定义并未统一</p>
+<p>2.一个最简单的定义：一些相互连接的、自治的计算机的集合</p>
+<p><strong>互连</strong>：计算机之间可以通过有线或无线的方式进行数据通信</p>
+<p><strong>自治</strong>：独立的计算机，它有自己的硬件和软件，可以单独运行使用</p>
+<p>3.较好的定义：计算机网络主要是由一些<label style="color:red">通用的、可编程的硬件</label>互连而成的，而这些硬件并非专门用来实现某一特定目的。这些可编程的硬件能够用来<label style="color:red">传送多种不同类型的数据</label>，并能支持广泛的和日益增长的应用</p>
+<p>4.计算机网络的分类：</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126195714973.png" alt="image-20220126195714973"></p>
+<h2 id="计算机网络的性能指标"><a href="#计算机网络的性能指标" class="headerlink" title="计算机网络的性能指标"></a>计算机网络的性能指标</h2><p>性能指标可以从不同的方面来度量计算机网络的性能</p>
+<p>常见的性能指标：</p>
+<ul>
+<li>速率</li>
+<li>带宽</li>
+<li>吞吐量</li>
+<li>时延</li>
+<li>时延带宽积</li>
+<li>往返时间</li>
+<li>利用率</li>
+<li>丢包率</li>
+</ul>
+<h3 id="速率"><a href="#速率" class="headerlink" title="速率"></a>速率</h3><p>速率与比特之间的比较：</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126195916262.png" alt="image-20220126195916262"></p>
+<h3 id="带宽"><a href="#带宽" class="headerlink" title="带宽"></a>带宽</h3><p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126195935130.png" alt="image-20220126195935130"></p>
+<p>一条通信线路的“频带宽度”越宽，其所传输数据的“最高数据率”也越高</p>
+<h3 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h3><p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126200029812.png" alt="image-20220126200029812"></p>
+<h3 id="时延"><a href="#时延" class="headerlink" title="时延"></a>时延</h3><p>网络时延主要包括：</p>
+<ul>
+<li>发送时延</li>
+<li>传播时延</li>
+<li>处理时延</li>
+</ul>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126200056226.png" alt="image-20220126200056226"></p>
+<p>三种时延的计算：</p>
+<img src="  image-20220126200202631.png" alt="image-20220126200202631" style="zoom:67%;" />
+
+<p>发送速率与网卡的发送速率、信道带宽和接口速率都有关：</p>
+<img src="  image-20220126200313052.png" alt="image-20220126200313052" style="zoom:80%;" />
+
+<h3 id="时延带宽积"><a href="#时延带宽积" class="headerlink" title="时延带宽积"></a>时延带宽积</h3><p>时延带宽积 = 传播时延 $\times$ 带宽</p>
+<p>在发送时延的过程中，通道上也在传送着数据</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126200432341.png" alt="image-20220126200432341"></p>
+<h3 id="往返时间"><a href="#往返时间" class="headerlink" title="往返时间"></a>往返时间</h3><p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126200553522.png" alt="image-20220126200553522"></p>
+<h3 id="利用率"><a href="#利用率" class="headerlink" title="利用率"></a>利用率</h3><p>利用率分为：<strong>信道利用率</strong> 和 <strong>网络利用率</strong></p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126202410869.png" alt="image-20220126202410869"></p>
+<p>网络时延与利用率之间的关系（U为利用率，D为时延）</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126202650236.png" alt="image-20220126202650236"></p>
+<h3 id="丢包率"><a href="#丢包率" class="headerlink" title="丢包率"></a>丢包率</h3><p>丢包率即分组丢包率，是指在一定的时间范围内，传输过程中<label style="color:red">丢失的分组数量与总分组数量的比率</label></p>
+<p>丢包率具体可分为：</p>
+<ul>
+<li>接口丢包率</li>
+<li>结点丢包率</li>
+<li>链路丢包率</li>
+<li>路径丢包率</li>
+<li>网络丢包率</li>
+</ul>
+<p>分组丢失的两种情况：</p>
+<img src="  image-20220126203024060.png" alt="image-20220126203024060" style="zoom: 67%;" />
+
+
+
+<h2 id="计算机网络体系结构"><a href="#计算机网络体系结构" class="headerlink" title="计算机网络体系结构"></a>计算机网络体系结构</h2><h3 id="三种体系结构"><a href="#三种体系结构" class="headerlink" title="三种体系结构"></a>三种体系结构</h3><p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126203119518.png" alt="image-20220126203119518"></p>
+<p>各层次涉及的协议</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126203252888.png" alt="image-20220126203252888"></p>
+<h3 id="各层级解决的问题"><a href="#各层级解决的问题" class="headerlink" title="各层级解决的问题"></a>各层级解决的问题</h3><p>物理层：</p>
+<ul>
+<li>采用怎样的传输媒体（介质）</li>
+<li>使用怎样的信号表示比特0和1</li>
+<li>采用怎样的物理接口</li>
+</ul>
+<p>数据链路层：</p>
+<ul>
+<li>如何表示网络中的各主机（主机编址问题，例如MAC地址）</li>
+<li>如何从信号所表示的一连串比特流中区分出地址和数据</li>
+<li>如何协调各主机争用总线</li>
+</ul>
+<p>网络层：</p>
+<ul>
+<li>如何识别各网络以及网络中的各主机（网络和主机共同编址问题，例如IP地址）</li>
+<li>路由器如何转发分组，如何进行路由选择</li>
+</ul>
+<p>运输层：</p>
+<ul>
+<li>如何解决进程之间基于网路的通信问题</li>
+<li>出现传输错误时，应该如何处理</li>
+</ul>
+<p>应用层：通过应用进程之间的交互来完成特定的网络应用</p>
+<ul>
+<li>支持万维网应用的HTTP协议</li>
+<li>支持电子邮件的SMTP协议</li>
+<li>支持文件传送的FTP协议</li>
+</ul>
+<img src="  image-20220126204243812.png" alt="image-20220126204243812"  />
+
+
+
+<h3 id="分层思想举例"><a href="#分层思想举例" class="headerlink" title="分层思想举例"></a>分层思想举例</h3><p>利用互联网实现应用进程间的通信</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126205121469.png"></p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1643201931837-16432025749551.gif" alt="1643201931837"></p>
+<h3 id="专用术语"><a href="#专用术语" class="headerlink" title="专用术语"></a>专用术语</h3><p><strong>实体</strong>：任何可发送或接收信息的<label style="color:red">硬件</label>或<label style="color:red">软件进程</label><strong>对等实体</strong>：收发双方相同层次中的实体</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126211150445.png" alt="image-20220126211150445"></p>
+<p><strong>协议</strong>：控制两个对等实体进行逻辑通信的规则的集合</p>
+<p>协议三要素：</p>
+<ul>
+<li>语法：定义所交换信息的格式</li>
+<li>语义：定义收发双方所要完成的操作</li>
+<li>同步：定义收发双方的时序关系</li>
+</ul>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126211307215.png" alt="image-20220126211307215"></p>
+<p><strong>服务</strong>：在协议的控制下，两个对等实体之间的逻辑通信使得本层能够向上一层提供服务。要实现本层协议，还需要使用下面一层所提供的服务</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126211508255.png" alt="image-20220126211508255"></p>
+<p>协议是<label style="color:red">水平的</label>，服务是<label style="color:red">垂直的</label></p>
+<p>实体看得见相邻下层所提供的服务，但是并不直到实现该服务的具体协议。即，下面的协议对上面的实体是透明的。</p>
+<p><strong>服务访问点</strong>：在同一系统中相邻两层的实体交换信息的逻辑接口，用于区分不同的服务类型。</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126211748781.png" alt="image-20220126211748781"></p>
+<p><strong>服务原语</strong>：上层使用下层所提供的服务必须通过与下层<label style="color:red">交换一些命令</label>，这些命令称为服务原语</p>
+<p><strong>协议数据单元PDU</strong>：<label style="color:red">对等层次</label>之间传送的数据包称为该层的协议数据单元</p>
+<p><strong>服务数据单元SDU</strong>：<label style="color:red">同一系统内</label>，层与层之间交换的数据包称为服务数据单元</p>
+<p>多个SDU可以合成为一个PDU，一个SDU也可划分为几个PDU</p>
+<p><img src="/2022/01/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/image-20220126212141712.png" alt="image-20220126212141712"></p>
+]]></content>
+      <tags>
+        <tag>考研</tag>
+      </tags>
+  </entry>
 </search>
